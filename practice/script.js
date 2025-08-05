@@ -45,7 +45,7 @@
 // assignmnet operaters
 let a = 12;
 let b = 2;
-let c = "12";
+let c = 5;
 
 //console.log(" a = ", a++); //4
 // console.log(" a = ", a += 1); //6
@@ -56,5 +56,175 @@ let c = "12";
 // console.log(" a = ", a **= 2); //16
 // console.log(" a=b = ", a != b);
 // console.log(" a=b = ", a ==b );
-console.log(" a are equal or not with database check c: ", a === c);
-console.log(" a are equal or not with database check c: ", a !== c);
+// console.log(" a are equal or not with database check c: ", a === c);
+// console.log(" a are equal or not with database check c: ", a !== c);
+
+//console.log(" 12 > 2 && 2 < 12 ", a < b || a > c);
+
+// let no = 28767387824;
+// if (no%2 == 0){
+//     console.log("Even Number");
+// }else{
+//     console.log("its odd no");
+// }
+
+// let mode = "dark";
+
+//let age = 18;
+
+// if(age >= 18){
+//     console.log(" Vote");
+// }
+// else{
+//    console.log("not able");
+// }
+
+// let mode = "dark white";
+
+// let color;
+
+// if(mode === "dark"){
+//     color = "black";
+// }
+// else if(mode === "white"){
+//     color = "white";
+// }
+// else if(mode === "dark blue"){
+//     color = " blue ";
+// }
+// else{
+//     color = "pink";
+// }
+
+// console.log(color);
+
+// let age = 25; 
+// let result = age >= 18 ? "vote" : "not vote"; // Ternary Operators
+// console.log(result);
+
+// age>= 18 ? console.log("vote") : console.log("not vote");
+
+//MDN Docs
+
+//alert("hello"); //one time popup
+
+// let name = prompt("hello");
+// console.log(name);
+
+// let no = prompt("Enter no");
+// if(no%5 === 0){
+//     console.log(no, "is multiply by 5");
+// }else{
+//     console.log(no, "is not multiply by 5");
+// }
+
+// let score = prompt("Enter the score (0-100)");
+// let score = 75;
+
+// if(score <= 100 && score >= 90){
+//     console.log(score, "Grade is A");
+// }
+// else if(score <= 89 && score >= 70){
+//     console.log(score, "Grade is B");
+// }
+// else if(score <= 69 && score >= 60){
+//     console.log(score, "Grade is C");
+// }
+// else if (score <= 59 && score >= 50){
+//     console.log(score, "Grade is D");
+// }
+// else if (score <= 49 && score >=0){
+//     console.log(score, "Grade is F");
+// }
+// else 
+// {
+//     console.log(score, "Not valide grade, please enter correct grade");
+// }
+
+// Loops
+// for loops while
+// for(let i = 1;    i<=5;    i++)
+//    initialization stopping updation
+
+// for(let count = 1; count <= 5; count++){
+//     console.log("Apna collage");
+// }
+
+// let n=0;
+// for (let i=1; i>=0; i++){
+//     n = n+i;
+// }
+// console.log(n);
+
+//loop never ends
+
+//while (condition){}
+// let i=1;
+// while(i<=15){
+//     console.log("i =", i);
+//     i++;
+// }
+
+//do-while loop
+// let i=1;
+// do{
+//     console.log("i = ", i);
+//     i++;
+// }while(i<=10);
+
+// for-of loop
+// for(let val of strVar){
+//do some work} -no initilization and no updation, nostopping condition
+// this is used only for arrays and strings
+
+// let str = "JavaScript";
+// let size = 0;
+
+// for (let val of str) // iterator = characters
+// {
+//     console.log(" val :", val);
+//     size++;
+// }
+// console.log(size);
+
+//for-in loops - uses for objects
+// for(let key in objVar){
+    //do some work
+// }
+
+// let stu = {
+//     name: "rahul",
+//     code: "Javascript",
+//     company: "carnera",
+// };
+// for(let key in stu){
+//     console.log("key =", key, "Value =", stu[key] );
+// }
+
+//assignment
+//Q1. Print all even no's from 0 to 100;
+
+// for(i=0; i<=100; i++){
+//     if(i%2 === 0){
+//         console.log("even no:", i);
+//     }
+// }
+
+// Q2. Create a game where you start with any random game number. Ask the user to keep guessing the 
+// game number untile user enteers corrrect number. 
+
+// let gameNum = 25;
+
+// let userNum = prompt("Guess the no:");
+// if(userNum === gameNum){
+//     console.log("You are guess correxct num");
+// }
+// else {
+//     console.log("Please guess correct num");
+// }
+
+// while(userNum != gameNum){
+//     userNum = prompt("Please guess correct num");
+// }
+
+// console.log("congratulations you enter the right number");
