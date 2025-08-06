@@ -1,0 +1,288 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <input type="number" id="num1" placeholder="Enter Your First Number" />
+    <input type="number" id="num2" placeholder="Enter Your Secound Numer" />
+    <button onclick="addNumbers()">ADD</button>
+    
+    <div id="result"></div>
+
+    <script>
+    function addNumbers() {
+        const n1 = parseFloat(document.getElementById('num1').value);
+        const n2 = parseFloat(document.getElementById('num2').value);
+
+        if (isNaN(n1) || isNaN(n2)) {
+        document.getElementById('result').textContent = "Please enter valid numbers!";
+      } else {
+
+        const sum = n1 + n2;
+        document.getElementsById('result').textContext = `Result: ${Sum}`; 
+      }
+    }
+
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adding Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    input, button {
+      margin: 10px;
+      padding: 10px;
+      font-size: 18px;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Adding Calculator</h1>
+
+  
+  <input type="number" id="num1" placeholder="Enter first number" />
+  <input type="number" id="num2" placeholder="Enter second number" />
+  <div>
+  <button onclick="addNumbers()">Add</button>
+  <button onclick="substractNumbers()">Subtract</button>
+  <button onclick="multipleNumbers()">Multiply</button>
+  <button onclick="divNumbers()">Divide</button>
+  </div>
+
+  <div id="result"></div>
+
+  <script>
+    function addNumbers() {
+      const n1 = parseFloat(document.getElementById('num1').value);
+      const n2 = parseFloat(document.getElementById('num2').value);
+      
+      if (isNaN(n1) || isNaN(n2)) {
+        document.getElementById('result').textContent = "Please enter valid numbers!";
+      } else {
+        const sum = n1 + n2;
+        document.getElementById('result').textContent = `Result: ${sum}`;
+      }
+    }
+     function substractNumbers() {
+      const n1 = parseFloat(document.getElementById('num1').value);
+      const n2 = parseFloat(document.getElementById('num2').value);
+      
+      if (isNaN(n1) || isNaN(n2)) {
+        document.getElementById('result').textContent = "Please enter valid numbers!";
+      } else {
+        const sum = n1 - n2;
+        document.getElementById('result').textContent = `Result: ${sum}`;
+      }
+    }
+
+     function multipleNumbers() {
+      const n1 = parseFloat(document.getElementById('num1').value);
+      const n2 = parseFloat(document.getElementById('num2').value);
+      
+      if (isNaN(n1) || isNaN(n2)) {
+        document.getElementById('result').textContent = "Please enter valid numbers!";
+      } else {
+        const sum = n1 * n2;
+        document.getElementById('result').textContent = `Result: ${sum}`;
+      }
+    }
+      
+     function divNumbers() {
+      const n1 = parseFloat(document.getElementById('num1').value);
+      const n2 = parseFloat(document.getElementById('num2').value);
+      
+      if (isNaN(n1) || isNaN(n2)) {
+        document.getElementById('result').textContent = "Please enter valid numbers!";
+      } else {
+        const sum = n1 / n2;
+        document.getElementById('result').textContent = `Result: ${sum}`;
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enhanced Calculator</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      background: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .calculator {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    input {
+      padding: 12px;
+      font-size: 18px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    button {
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #result {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      min-height: 30px;
+    }
+
+    .error {
+      color: red;
+      font-size: 14px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="calculator">
+    <h1>Smart Calculator</h1>
+
+    <input type="number" id="num1" placeholder="Enter first number" />
+    <input type="number" id="num2" placeholder="Enter second number" />
+
+    <div class="buttons">
+      <button onclick="calculate('add')">Add</button>
+      <button onclick="calculate('subtract')">Subtract</button>
+      <button onclick="calculate('multiply')">Multiply</button>
+      <button onclick="calculate('divide')">Divide</button>
+    </div>
+
+    <button onclick="clearFields()">Clear</button>
+
+    <div id="result"></div>
+    <div id="error" class="error"></div>
+  </div>
+
+  <script>
+    let lastOperation = null;
+
+    function calculate(operation) {
+      const num1 = parseFloat(document.getElementById('num1').value);
+      const num2 = parseFloat(document.getElementById('num2').value);
+      const resultDiv = document.getElementById('result');
+      const errorDiv = document.getElementById('error');
+
+      errorDiv.textContent = '';
+      resultDiv.textContent = '';
+
+      if (isNaN(num1) || isNaN(num2)) {
+        errorDiv.textContent = "⚠️ Please enter valid numbers!";
+        return;
+      }
+
+      let result;
+
+      switch (operation) {
+        case 'add':
+          result = num1 + num2;
+          break;
+        case 'subtract':
+          result = num1 - num2;
+          break;
+        case 'multiply':
+          result = num1 * num2;
+          break;
+        case 'divide':
+          if (num2 === 0) {
+            errorDiv.textContent = "🚫 Cannot divide by zero!";
+            return;
+          }
+          result = num1 / num2;
+          break;
+        default:
+          errorDiv.textContent = "❓ Unknown operation!";
+          return;
+      }
+
+      lastOperation = operation;
+      resultDiv.textContent = `✅ Result: ${result}`;
+    }
+
+    function clearFields() {
+      document.getElementById('num1').value = '';
+      document.getElementById('num2').value = '';
+      document.getElementById('result').textContent = '';
+      document.getElementById('error').textContent = '';
+      lastOperation = null;
+    }
+
+    // Enter key triggers last operation
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Enter' && lastOperation) {
+        calculate(lastOperation);
+      }
+    });
+  </script>
+
+</body>
+</html> -->

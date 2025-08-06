@@ -43,9 +43,9 @@
 
 
 // assignmnet operaters
-let a = 12;
-let b = 2;
-let c = 5;
+// let a = 12;
+// let b = 2;
+// let c = 5;
 
 //console.log(" a = ", a++); //4
 // console.log(" a = ", a += 1); //6
@@ -172,11 +172,6 @@ let c = 5;
 //     i++;
 // }while(i<=10);
 
-// for-of loop
-// for(let val of strVar){
-//do some work} -no initilization and no updation, nostopping condition
-// this is used only for arrays and strings
-
 // let str = "JavaScript";
 // let size = 0;
 
@@ -186,11 +181,6 @@ let c = 5;
 //     size++;
 // }
 // console.log(size);
-
-//for-in loops - uses for objects
-// for(let key in objVar){
-    //do some work
-// }
 
 // let stu = {
 //     name: "rahul",
@@ -228,3 +218,125 @@ let c = 5;
 // }
 
 // console.log("congratulations you enter the right number");
+
+// let str = "Arun";
+// console.log(str[0]);
+
+// let obj = {
+//     name: "Arun",
+//     org: "Carnera",
+//     role: "Tester",
+//     salary: 10000,
+// }
+
+// console.log("name of the person", obj.name, 
+//     "organazation is", obj.org, 
+//     "and salary is", obj.salary);
+
+//String interpolation is below written - To create string by doing subtution of placeholders
+//`string text ${expression} string text` 
+// let output = `name is ${obj.name} and company is ${obj.org} and salary is ${obj.salary}`;
+// console.log(output);
+
+// let str = "rahul";
+// console.log(str.length);
+// console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
+// console.log(str.slice(1,2));
+
+// let str1 = "good";
+// let str2 = "morning";
+// let res = str1.concat(str2); //str1 +str2; concat
+// console.log(res);
+
+// let str3 = "Carnera";
+// let str4 = (str3.replace("C", "getC"));
+// console.log(str4);
+// console.log(str4[2]);
+
+// let userName = prompt("Enter the full name without space");
+// let u_length= userName.length;
+// console.log("The user name is : " + "@" + userName + u_length);
+
+
+// let arr = [12, 34 , 556, 78, 89];
+
+// console.log(arr);
+// console.log(arr.length);
+// arr[3] = 23;
+// console.log(arr);
+
+//let heroes = ["spiderman", "ironman", "shaktiman", "thor", "hulk", "spiderman", "antman" ];
+// console.log(heroes[0]);
+// console.log(heroes[1]);
+// console.log(heroes[2]);
+
+// for(let i=0; i<heroes.length; i++)
+// {
+//     console.log(heroes[i]);
+// }
+
+//for off
+// for(let hero of heroes){
+//     console.log(hero);
+// }
+
+// let cities = ["delhi", "pune", "hydrabad", "mumbai", "chenai"];
+
+// for (let city of cities){
+//     console.log(city.toUpperCase());
+// }
+
+// let marks = [85, 97, 44, 37, 76, 60];
+// let totalmarks = 0;
+
+//let totalmarks = marks[0]+marks[1]+marks[2]+marks[3]+marks[4]+marks[5];
+
+// for(let val of marks){
+//     totalmarks = totalmarks + val;
+    //totalmarks += val;
+// }
+
+// for (let i=0; i<marks.length; i++){
+//     totalmarks = ;
+//     console.log("totalmarks", totalmarks);
+// }
+
+// console.log("totalmarks", totalmarks);
+// let avg = totalmarks/marks.length;
+// console.log(avg);
+
+// console.log(`total marks of class is = ${totalmarks} and avrg of the class is = ${avg}`);
+
+
+let item = [250, 645, 300, 900, 50];
+//const max = Math.max(item);
+
+// for (let val of item){
+//      offer = val/10;
+//      val = val - offer;
+//      console.log(val);
+// }
+//console.log(val);
+
+// for (i=0; i<item.length; i++){
+//     let offer = item[i]/10;
+//     item[i] = item[i] - offer; //item[i] -= offer;
+//     //console.log(`after the 10% off to item items = ${item[i]}`);
+// }
+// console.log(item);
+
+// for (i=0; i<item.length; i++){
+//     max = item[i]>max;
+//     console.log(max);
+// }
+
+// let i=0;
+// for(let val of item){
+//     console.log(val);
+//     val = val>i;
+//     i++;
+//     // console.log(val[i]);
+// }
+//console.log(Math.min(...item));
+//console.log(Math.max(...item));

@@ -1,0 +1,51 @@
+for-of loop
+for(let val of strVar){
+do some work} -no initilization and no updation, nostopping condition
+this is used only for arrays and strings
+
+for-in loops - uses for objects
+for(let key in objVar){
+    do some work
+}
+
+************STRING************
+-> String is a sequence of charecters used to represent text.
+ex: let str = "Arun" or 'arun';
+check index str[1]
+
+=> Templete Literals In JS
+A way to have embedded expression in string. - back tik - ``
+let spacialString = `This is a Templete Literal`
+console.log(spacialString);
+
+\n - escape charecter is use for in string go to next line
+\t - tab scape and its both escape and tab consider one 1 charecter
+
+String methods (Block of code): functions : These are built-in fuctions manipulate a string. 
+let str = "arun";
+console.log(str.length());
+
+str.toUpperCase();
+str.length;
+str.toLowercase();
+str.slice(start, end); //return part of the string
+str1.concat(str2); //joins str2 with str1
+str.replace(searchVar, newVar);
+str.replacAll(searchVar, newVar);
+str.charAt(idx); 
+
+Arrays: 
+Collection of items - linear(values are store in single line fashion/linear fashion)
+
+create Array
+array.length - its property
+array is special type of object
+
+Looping over an Array - Print all elements of an array
+
+
+
+
+
+
+
