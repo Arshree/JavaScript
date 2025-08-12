@@ -309,8 +309,9 @@
 // console.log(`total marks of class is = ${totalmarks} and avrg of the class is = ${avg}`);
 
 
-let item = [250, 645, 300, 900, 50];
-//const max = Math.max(item);
+// let item = [250, 645, 300, 900, 50];
+//let max = Math.max(item);
+// let max = item[0];
 
 // for (let val of item){
 //      offer = val/10;
@@ -326,10 +327,12 @@ let item = [250, 645, 300, 900, 50];
 // }
 // console.log(item);
 
-// for (i=0; i<item.length; i++){
-//     max = item[i]>max;
-//     console.log(max);
+// for (i=0; i<item.length; i++){ //maximum no of array
+//     if(item[i]>max){
+//     max = item[i];
 // }
+// }
+// console.log("Maximun number is:", max);
 
 // let i=0;
 // for(let val of item){
@@ -340,3 +343,116 @@ let item = [250, 645, 300, 900, 50];
 // }
 //console.log(Math.min(...item));
 //console.log(Math.max(...item));
+
+// let arr = [12, 13, 14, 15];
+// arr.push(16); 
+// console.log(arr);
+// let deleteArr = arr.pop();
+// console.log("after detele", deleteArr);
+// console.log(arr);
+
+// console.log(arr.toString());
+
+// let arr2 = ["a", "e", "i", "o", "u"];
+// let arr3 = [16, 17, 18, 19];
+// let newArr = arr.concat(arr2, arr3);
+
+// newArr.unshift(11);
+// console.log(newArr);
+
+// newArr.shift(11);
+// console.log(newArr);
+
+// //let cut = newArr.slice(1, 3);
+// console.log(newArr.slice(4, 6));
+
+//splice() method - replace
+//arr.splice(2,1,90);
+
+//add through splice()
+//arr.splice(2, 0, 101);
+
+// delete through splics
+//arr.splice(3,1);
+
+
+//let compnies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+
+//removing first company from array
+//let removeFirst =  compnies.shift(1);
+// console.log(removeFirst);
+// compnies.shift(1);
+// console.log(compnies);
+
+//replace uber to ola
+// compnies.splice(2, 1, "Ola");
+// console.log(compnies);
+
+//Add Amazon on edd
+// compnies.push("Amazon");
+// console.log(compnies);
+
+//Functions
+// function sum(x, y){
+//     s = x + y;
+//     return s;
+// }
+
+// console.log(sum(23, 34));
+
+// const mulNo = (x, y)=>{
+//     return x * y;
+// }
+
+// mulNo(23, 10);
+
+// function vowelsCount(str){
+//     let count = 0;
+// for(i=0; i<=str.length; i++){
+//     if(str[i] === "a" || str[i] === "e" || str[i] === "i" || str[i] === "o" || str[i] === "u"){
+//         count++;
+//     }
+//     //console.log(str[i]);
+//     //console.log(count);
+// }
+// console.log(count);
+// return count;
+// }
+
+// vowelsCount("my Name is arun");
+
+
+// function countVowel(s){
+// let count = 0;
+// for (i=0; i<s.length; i++){
+//     if(s[i] === "a" || s[i] === "e" || s[i] === "i" || s[i] === "o" || s[i] === "u"){
+//         count++;
+//     }
+// }
+// console.log(count);
+// }
+
+// countVowel ("aioue");
+
+// const countofconsonants = (s) =>{ //arrow function
+//     let count = 0;
+//     for (i=0; i<s.length; i++){
+//         if (!(s[i] === "a" || s[i] === "e" || s[i] === "i" || s[i] === "o" || s[i] === "u")){
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+
+// countVowel("shrimanrayan");
+
+const countVowel = (word) =>{
+let count =0;
+for(let char of word){
+    if(char === "a" || char === "e" || char === "i" || char === "o" || char === "u"){
+        count++;
+    }
+}
+return count;
+}
+
