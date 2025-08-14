@@ -43,8 +43,66 @@ array is special type of object
 
 Looping over an Array - Print all elements of an array
 
+Array mentods: Array have multiple methods(0 some will retrun the new array, some not return)
+
+push(): this will help to add new array in exist array from end.
+ex: let arr = [12, 13,14,15];
+arr.push(16); = return arr = [12,13,14,15,16];
+
+pop(): It will help to delete array from end.
+arr.pop(); - return arr = [12,13,14];
+
+toString(): convert array to string.
+ex: arr.toString();
+
+concat(): joins multi arrays in one arrays.
+ex: let arr2 = ["a", "e", "i", "o", "u"];
+console.log(arr.concat(arr2));
+
+unshift(): its work like same push(), but difference is add from start.
+arr.unshift(11);
+
+shift(): its work same like pop(), but difference is delete from strt.
+arr.shift(11);
+
+slice(): return the piece of the array 
+arr.slice(1,3);
+
+splice(): : change original array(add, remove, replace) - not change the original array.
+if u not pass any value in splice() its act as slice().
 
 
+*****************Functions/Methods*****************
+
+Functions() in JS: Block of the code that performs a special task, can be invoked whenever needed.
+
+Functions definiions
+
+function functionName() {
+    //do some work
+}
+
+function functionName(paramiter1, parameter2,...){
+    //do some work
+}
+
+Functions call
+
+functionName();
+
+Function have return and after return we can't write any code and whatever parameter u passed in function they 
+are only local variable and its only for that block of scope variables(block of scope). 
+We can't call that variable out side of the block.
+
+Arrow Functions(=>): is a part of moder JS 
+Compact way of writing a function
+how to write this 
+const vairiableName = (parameter1, parameter2)=>{
+    //do something main code
+}
+
+
+for each loop
 
 
 
