@@ -34,6 +34,7 @@ str.replace(searchVar, newVar);
 str.replacAll(searchVar, newVar);
 str.charAt(idx); 
 
+****************ARRAYS**************************
 Arrays: 
 Collection of items - linear(values are store in single line fashion/linear fashion)
 
@@ -102,8 +103,64 @@ const vairiableName = (parameter1, parameter2)=>{
 }
 
 
-for each loop
+for each loop in Arrays
+
+arr.forEach(callBackFunction)
+
+CallbackFunction : Here, it is a function to execute for each element in the array
+*A callback is a function passed as an argument to another function.
+
+arr.forEach((val)=>{
+    console.log(val)
+})
+
+Higher order function/methods
+Its take another function as paramenter or return another function is called higher order function
+
+Map: map creates a new array with results of some operation. The value its callback returns are used to 
+form new array.
+arr.map(callbackFnx(value, idx, array))
+
+Filter: Creates new array of elemnets that give true for a condition/filter.
+eg: all even elements.
+
+Reduce(): Performs some opertions and reduces the array to a single value. its returns the single value.
 
 
+The 3 musketeers of Web Application is 
+1. HTML (Hyper text Markp Language) (Structure)
+2. CSS (Style) cascading style sheet
+3. JS (logic) Java script
+
+//shift + ! - is help to give basic code of HTML
+we can write direct 
+<style>
+h1 {
+    background-color: pink;
+}
+
+When developer creating new files for css and JS it will help for 
+=> readability(easy to read the code)
+=> modular
+=> browser cache
+
+Window:
+The window object represents an open window in browser. It is browser's object (not Java Script's) 
+and its automatically creates by browser.
+It is a global object with lots of methods and objects. (we can say prent of all methods and objects).
+
+What is DOM?
+Document Object Model: When a web page is loaded, the browser creates a Document Object Model of the page.
+window is also a object we can say ita parent of all objects (window.console.log("");)
+
+Difference between console.log and console.dir
+console.log - will print only message in the console or window
+console.dir - will print the methods or properties of the special objects (ex: document, div)
+
+Tree structure of the DOM - 
+![DOM Tree Structure](practice/basics/screenshots/Screenshot%202025-08-20%20at%2013.35.47.png)
+
+id will shows with#
+class shows with.
 
 
